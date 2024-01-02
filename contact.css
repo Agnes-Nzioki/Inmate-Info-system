@@ -1,105 +1,167 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
 }
-
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: url(https://i.pinimg.com/564x/98/28/55/982855c21df5774028cdaeabdeb85049.jpg);
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+     url(handcarf.jpeg);
     background-size: cover;
+    background-position: center;
 }
 
-.contact .content{
-    max-width: 800px;
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* adding a line below the list of menu on the navabar */
+.navbar ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: rgb(0, 119, 255); 
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width: 100%;
+}
+button {
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 10px 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(0, 119, 255); 
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+span{
+    background:rgb(0, 119, 255); ;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+/* Footer styling */
+footer{
+    background: #869c9b;
+    padding-top: 50px;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 33.3%;
+}
+h3{
+    font-size: 28px;
+    margin-bottom: 15px;
     text-align: center;
 }
-
-.contact .content h2{
-    font-size: 36px;
-    font-weight: 500;
+.footer-content p{
+    width:190px;
+    margin: auto;
+    padding: 7px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list{
+    padding: 0;
+}
+.list li{
+    width: auto;
+    text-align: center;
+    list-style-type:none;
+    padding: 7px;
+    position: relative;
+    color: black;
+}
+.list li::before{
+    content: '';
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: rgb(0, 119, 255);
+    transition-duration: .5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color: white;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(0, 119, 255);
+}
+.social-icons i:hover{
+    color:rgb(0, 119, 255);
+}
+.bottom-bar{
+    background:rgb(4, 29, 58);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
     color: #fff;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
 }
-
-.contact .content p{
-    font-weight: 300;
-    color: #fff;
-}
-
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.container .contactInfo{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
-
-.container .contactInfo .box{
-    position:relative;
-    padding: 20px 0 ;
-    display: flex;
-}
-
-.container .contactInfo .box .icon{
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .contactInfo .box .text{
-display: flex;
-margin-left: 20px;
-font-size: 16px;
-color: #fff;
-flex-direction: column;
-font-weight: 300;
-}
-
-.container .contactInfo .box .text h3{
-font-weight: 500;
-color: aqua;
-    
-}
-
-.contactForm{
-width: 40%;
-padding: 40px;
-background: #fff;
-}
-.contactForm h2{
-font-size: 30px;
-color: aqua;
-font-weight: 500;
-
-}
-
-.contactForm .inputBox{
-position: relative;
-width: 100%;
-margin-top: 10px;
-}
-.contactForm .inputBox input{
-width: 100%;
-padding: 5px 0;
-font-size: 16px;
-margin: 10px 0;
-border: none;
-border-bottom: 2px solid aqua;
-outline: none;    
+/* styling the search form */
+_search-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
