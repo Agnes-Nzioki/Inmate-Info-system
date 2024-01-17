@@ -27,22 +27,25 @@
             Search below to get the information you need.</strong></p>
             <div class="form-box login">
                 <h2> Please enter the inmate details below</h2>
-                <form action="#" method="dialog">
+                <form action="#" method="dialog" id="my-form">
                   <div class="input-box">
+                    <div class="msg">
+
+                    </div>
 
                     <label>Inamte First Name:</label>
                   <div>
-                    <input type="text" required placeholder="First Name">
+                    <input type="text" required placeholder="First Name" id="firstName">
                   </div>
 
                   <label> Last Name:</label>
                   <div>
-                    <input type="text" required placeholder="Last Name">
+                    <input type="text" required placeholder="Last Name" id="lastName">
                   </div>
 
                     <label>Inamte ID number:</label>
                   <div>
-                    <input type="numbers" required placeholder="12345678">
+                    <input type="numbers" required placeholder="12345678" id="ID">
                   </div>
 
                   <div>
@@ -63,20 +66,25 @@
 <footer>
   <div class="container">
       <div class="footer-content">
-          <h3>Contact Us</h3>
-          <p>Email:Inmateregistry@gmail.com</p>
-          <p>Phone:+254 46121987</p>
-          <p>Address:Haile Selassie Avenue, 
-            P.O. BOX 5427- 00200, Nairobi, Kenya</p>
+            <h3>Service Links</h3>
+            <ul class="list">
+              <li>COURT ORDERED PAYMENTS</li>
+              <li>CONTACT AN INMATE</li>
+              <li>PUBLIC RECORDS</li>
+              <li>FILE A COMPLAINT</li>
+              <li> REGULATORY PLAN</li>
+          </ul>
+
       </div>
       <div class="footer-content">
           <h3>Quick Links</h3>
            <ul class="list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="About.html">About</a></li>
-              <li><a href="Services.html">Services</a></li>
-              <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="About.html">ABOUT</a></li>
+              <li><a href="Services.html">SERVICES</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
            </ul>
+
       </div>
       <div class="footer-content">
           <h3>Follow Us</h3>
@@ -97,5 +105,6 @@
       <p>&copy; 2024 Inmate Registry . All rights reserved</p>
   </div>
 </footer>
+<script src="app.js"> </script>
 </body>
 </html>
